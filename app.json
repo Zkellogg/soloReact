@@ -4,11 +4,11 @@
     "slug": "FirstProject",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./images/IndoorAg_Logo_Horizontal_BW-1.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./images/IndoorAg_Logo_Horizontal_BW-1.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#95C04C"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
