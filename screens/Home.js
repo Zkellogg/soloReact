@@ -1,14 +1,31 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Button, Modal } from "react-native";
+import BoothLookup from "../models/BoothLookup";
+import SpeakerLookup from "../models/SpeakerLookup";
 import EventMap from "../models/EventMap";
 
 const Home = (props) => {
   const [viewMap, setViewMap] = useState(false);
+  const [viewBoothLookup, setViewBoothLookup] = useState(false);
+  const [viewSpeakerLookup, setViewSpeakerLookup] = useState(false);
+
   const openViewMap = () => {
     setViewMap(true);
   };
   const closeViewMap = () => {
     setViewMap(false);
+  };
+  const openBoothLookup = () => {
+    setViewBoothLookup(true);
+  };
+  const closeBoothLookup = () => {
+    setViewBoothLookup(false);
+  };
+  const openSpeakerLookup = () => {
+    setViewSpeakerLookup(true);
+  };
+  const closeSpeakerLookup = () => {
+    setViewSpeakerLookup(false);
   };
 
   return (
@@ -16,17 +33,23 @@ const Home = (props) => {
       <Modal visible={viewMap}>
         <EventMap passCloseButton={closeViewMap} />
       </Modal>
+      <Modal visible={viewBoothLookup}>
+        <BoothLookup passCloseBLU={closeBoothLookup} />
+      </Modal>
+      <Modal visible={viewSpeakerLookup}>
+        <SpeakerLookup passCloseSLU={closeSpeakerLookup} />
+      </Modal>
       <View style={styles.divOne}>
         <View style={styles.eventMap}>
           <Button title="Event Map" onPress={openViewMap} />
         </View>
         <View style={styles.boothLookup}>
-          <Button title="Booth Lookup" />
+          <Button title="Booth Lookup" onPress={openBoothLookup} />
         </View>
       </View>
       <View style={styles.divTwo}>
         <View style={styles.speakerLookup}>
-          <Button title="Speaker Lookup" />
+          <Button title="Speaker Lookup" onPress={openSpeakerLookup} />
         </View>
         <View style={styles.fullSchedule}>
           <Button title="Full Schedule" />
