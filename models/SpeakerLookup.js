@@ -1,8 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View, FlatList, Button } from "react-native";
+import { connect } from "react-redux";
 import Header from "../components/Header";
 
-const SpeakerLookup = (props) => {
+const SpeakerLookup = ({ speakers, passCloseSLU }) => {
   let speakerArr = [
     {
       key: "1",
@@ -29,17 +30,22 @@ const SpeakerLookup = (props) => {
       about: "some random information",
     },
   ];
+
+  console.log({ speakers });
+
   return (
     <View>
       <Header />
-      <Button title="Close" onPress={props.passCloseSLU} />
+      <Button title="Close" onPress={passCloseSLU} />
       <FlatList
-        data={speakerArr}
+        data={speakers}
         renderItem={({ item }) => (
           <View>
-            <Text>Speaker Title: {item.speakerId}</Text>
-            <Text>Speaker: {item.name}</Text>
-            <Text>Info: {item.about}</Text>
+            <Text>{item.name}</Text>
+            <Text>Company: {item.company}</Text>
+            <Text>Title: {item.title}</Text>
+            <Text>Linked-in: {item.linkedin}</Text>
+            <Text>About: {item.info}</Text>
           </View>
         )}
       />
@@ -47,4 +53,9 @@ const SpeakerLookup = (props) => {
   );
 };
 
-export default SpeakerLookup;
+const mapStateToProps = (state) => {
+  const { speakers } = state;
+  return { speakers };
+};
+
+export default connect(mapStateToProps)(SpeakerLookup);

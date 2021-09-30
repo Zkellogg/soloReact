@@ -1,27 +1,33 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 import Header from "./components/Header";
-import Login from "./screens/Login";
 import Home from "./screens/Home";
+import { createStore } from "redux";
+import { connect, Provider } from "react-redux";
 
-export default function App() {
-  const [email, setEmail] = useState("");
-  const emailHandler = (emailText) => {
-    setEmail(emailText);
-  };
+import appReducer from "./store/reducers/appReducer";
 
-  let content = <Login emailChange={emailHandler} />;
+const store = createStore(appReducer);
 
-  if (email) {
-    content = <Home />;
-  }
+function App(props) {
+  // const [email, setEmail] = useState("");
+  // const emailHandler = (emailText) => {
+  //   setEmail(emailText);
+  // };
+
+  // let content = <Login emailChange={emailHandler} />;
+
+  // if (email) {
+  //   content = <Home />;
+  // }
 
   return (
-    <View style={styles.screen}>
-      <Header title="Indoor Ag Con" />
-      {content}
-    </View>
+    <Provider store={store}>
+      <View style={styles.screen}>
+        <Header title="Indoor Ag Con" />
+        <Home />
+      </View>
+    </Provider>
   );
 }
 
@@ -30,3 +36,5 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+export default App;
