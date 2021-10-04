@@ -38,9 +38,9 @@
     <a href="https://github.com/Zkellogg/soloReact"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"><strong>Explore the docs »</strong></a>
-    <a href="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png"><strong>Explore the docs »</strong></a>
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png" alt="Logo" width="300" height="80">
+   
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png" alt="Logo" width="80" height="200">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" alt="Logo" width="80" height="200">
 
 
   </p>
