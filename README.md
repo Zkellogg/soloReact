@@ -38,9 +38,10 @@
     <a href="https://github.com/Zkellogg/soloReact"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-   
+   <a href="https://github.com/github_username/repo_name">
      <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="80" height="200">
      <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="80" height="200">
+    </a>
 
 
   </p>
