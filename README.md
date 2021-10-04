@@ -21,7 +21,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url] -->
 
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/zac-kellogg-97699b49/]
+[[LinkedIn](https://www.linkedin.com/in/zac-kellogg-97699b49)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -42,7 +42,6 @@
      <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="500" height="700">
      <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="500" height="700">
     </a>
-
 
   </p>
 </div>
