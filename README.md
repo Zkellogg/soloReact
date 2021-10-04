@@ -39,8 +39,8 @@
     <br />
     <br />
    <a href="https://github.com/github_username/repo_name">
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="200" height="300">
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="200" height="300">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="400" height="800">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="400" height="800">
     </a>
 
 
