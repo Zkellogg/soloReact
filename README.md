@@ -26,7 +26,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Zkellogg/soloReact">
     <img src="https://indoor.ag/wp-content/uploads/2020/02/IndoorAg_Logo_Horizontal_BW-1.png" alt="Logo" width="300" height="80">
   </a>
 
@@ -39,8 +39,8 @@
     <br />
     <br />
    <a href="https://github.com/github_username/repo_name">
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="80" height="200">
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="80" height="200">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="200" height="300">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="200" height="300">
     </a>
 
 
