@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://indoor.ag/wp-content/uploads/2020/02/IndoorAg_Logo_Horizontal_BW-1.png" alt="Logo" width="80" height="80">
+    <img src="https://indoor.ag/wp-content/uploads/2020/02/IndoorAg_Logo_Horizontal_BW-1.png" alt="Logo" width="300" height="80">
   </a>
 
 <h3 align="center">Indoor Ag Con Mobile App</h3>
