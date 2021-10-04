@@ -39,8 +39,8 @@
     <br />
     <br />
    
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png" alt="Logo" width="80" height="200">
-     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" alt="Logo" width="80" height="200">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"  width="80" height="200">
+     <img src="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png" width="80" height="200">
 
 
   </p>
