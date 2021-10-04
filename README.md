@@ -30,19 +30,18 @@
     <img src="https://indoor.ag/wp-content/uploads/2020/02/IndoorAg_Logo_Horizontal_BW-1.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Indoor Ag Con Mobile App</h3>
 
   <p align="center">
-    project_description
+    An App to give relavent info, directions, and scheduling while attending the Indoor Agriculture Convention. 
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Zkellogg/soloReact"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    
-    ·
-    <a href="https://github.com/Zkellogg/soloReact/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Zkellogg/soloReact/issues">Request Feature</a>
+    <a href="./images/Screen Shot 2021-10-01 at 12.10.34 PM.png"><strong>Explore the docs »</strong></a>
+    <a href="./images/Screen Shot 2021-10-01 at 12.10.48 PM.png"><strong>Explore the docs »</strong></a>
+
+
   </p>
 </div>
 
@@ -76,7 +75,7 @@
 
 ## About The Project
 
-[![Indoor.ag Convention App][product-screenshot]](https://github.com/Zkellogg/soloReact)
+[[Indoor.ag Convention App][product-screenshot]](https://github.com/Zkellogg/soloReact)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
