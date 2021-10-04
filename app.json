@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "FirstProject",
-    "slug": "FirstProject",
+    "name": "Indoor ag con app",
+    "slug": "indooragapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./images/IndoorAg_Logo_Horizontal_BW-1.png",
+    "icon": "./images/IndoorAg_Logo_Horizontal_BW-1.jpg",
     "splash": {
-      "image": "./images/IndoorAg_Logo_Horizontal_BW-1.png",
+      "image": "./images/IndoorAg_Logo_Horizontal_BW-1.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#95C04C"
     },
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

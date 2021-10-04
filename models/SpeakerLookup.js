@@ -2,37 +2,9 @@ import React from "react";
 import { StyleSheet, Text, View, FlatList, Button } from "react-native";
 import { connect } from "react-redux";
 import Header from "../components/Header";
+import colors from "../constants/colors";
 
 const SpeakerLookup = ({ speakers, passCloseSLU }) => {
-  let speakerArr = [
-    {
-      key: "1",
-      speakerId: 100,
-      name: "Booth 1",
-      about: "some random information",
-    },
-    {
-      key: "2",
-      speakerId: 200,
-      name: "Booth 2",
-      about: "some random information",
-    },
-    {
-      key: "3",
-      speakerId: 300,
-      name: "Booth 3",
-      about: "some random information",
-    },
-    {
-      key: "4",
-      speakerId: 400,
-      name: "Booth 4",
-      about: "some random information",
-    },
-  ];
-
-  console.log({ speakers });
-
   return (
     <View>
       <Header />
@@ -40,18 +12,44 @@ const SpeakerLookup = ({ speakers, passCloseSLU }) => {
       <FlatList
         data={speakers}
         renderItem={({ item }) => (
-          <View>
-            <Text>{item.name}</Text>
-            <Text>Company: {item.company}</Text>
-            <Text>Title: {item.title}</Text>
-            <Text>Linked-in: {item.linkedin}</Text>
-            <Text>About: {item.info}</Text>
+          <View style={styles.viewDiv}>
+            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.titleAndCompany}>
+              {item.title} {item.company}
+            </Text>
+
+            <Text style={styles.contact}>{item.linkedin}</Text>
+            <Text style={styles.info}>{item.info}</Text>
           </View>
         )}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  viewDiv: {
+    backgroundColor: colors.liColor,
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 8,
+  },
+  name: {
+    textAlign: "center",
+    fontSize: 22,
+  },
+  contact: {
+    textAlign: "center",
+  },
+  titleAndCompany: {
+    textAlign: "center",
+    fontSize: 18,
+  },
+  info: {
+    textAlign: "center",
+  },
+});
 
 const mapStateToProps = (state) => {
   const { speakers } = state;

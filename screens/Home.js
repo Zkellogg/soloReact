@@ -5,20 +5,21 @@ import SpeakerLookup from "../models/SpeakerLookup";
 import EventMap from "../models/EventMap";
 import Schedule from "../models/Schedule";
 import { connect } from "react-redux";
+import Colors from "../constants/colors";
 
 const Home = (props) => {
   useEffect(() => {
-    fetch("http://localhost:8080/allbooths")
+    fetch("https://desolate-plateau-40403.herokuapp.com/allbooths")
       .then((response) => response.json())
       .then((booths) => {
         props.onBoothsLoaded(booths);
       });
-    fetch("http://localhost:8080/allspeakers")
+    fetch("https://desolate-plateau-40403.herokuapp.com/allspeakers")
       .then((responce) => responce.json())
       .then((speakers) => {
         props.onSpeakersLoaded(speakers);
       });
-    fetch("http://localhost:8080/getschedule")
+    fetch("https://desolate-plateau-40403.herokuapp.com/getschedule")
       .then((responce) => responce.json())
       .then((schedule) => {
         props.onScheduleLoaded(schedule);
@@ -73,7 +74,11 @@ const Home = (props) => {
       </Modal>
       <View style={styles.divOne}>
         <View style={styles.eventMap}>
-          <Button title="Event Map" onPress={openViewMap} />
+          <Button
+            style={styles.buttonWords}
+            title="Event Map"
+            onPress={openViewMap}
+          />
         </View>
         <View style={styles.boothLookup}>
           <Button title="Booth Lookup" onPress={openBoothLookup} />
@@ -104,7 +109,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: "100%",
     width: "100%",
-    backgroundColor: "#d8e4bc",
+    backgroundColor: "black",
     //justifyContent: "center",
     alignItems: "center",
   },
@@ -131,66 +136,69 @@ const styles = StyleSheet.create({
   },
   eventMap: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: Colors.homeButton,
     marginRight: 20,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
   },
   boothLookup: {
     flex: 1,
-    backgroundColor: "purple",
+    backgroundColor: Colors.homeButton,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
   },
   speakerLookup: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: Colors.homeButton,
     marginRight: 20,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
   },
   fullSchedule: {
     flex: 1,
-    backgroundColor: "purple",
+    backgroundColor: Colors.homeButton,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
   },
   myProfile: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: Colors.homeButton,
     marginRight: 20,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
   },
   settings: {
     flex: 1,
-    backgroundColor: "purple",
+    backgroundColor: Colors.homeButton,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
     shadowOffset: { width: 8, height: 8 },
-    shadowColor: "black",
-    shadowOpacity: 0.5,
+    shadowColor: Colors.buttonShadow,
+    shadowOpacity: 0.6,
+  },
+  buttonWords: {
+    backgroundColor: Colors.buttonWords,
   },
 });
 

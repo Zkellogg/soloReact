@@ -24,7 +24,7 @@ function App(props) {
   return (
     <Provider store={store}>
       <View style={styles.screen}>
-        <Header title="Indoor Ag Con" />
+        <Header style={styles.header} title="Indoor Ag Con" />
         <Home />
       </View>
     </Provider>

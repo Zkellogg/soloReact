@@ -2,38 +2,9 @@ import React from "react";
 import { View, Text, StyleSheet, Button, FlatList } from "react-native";
 import Header from "../components/Header";
 import { connect } from "react-redux";
+import colors from "../constants/colors";
 
 const Schedule = ({ schedule, passCloseSchedule }) => {
-  let scheduleArr = [
-    {
-      key: "1",
-      date: "day 1",
-      time: "08:00",
-      speaker: "name of speaker",
-      info: "info about event/speaker",
-    },
-    {
-      key: "2",
-      date: "day 1",
-      time: "09:00",
-      speaker: "name of speaker",
-      info: "info about event/speaker",
-    },
-    {
-      key: "3",
-      date: "day 2",
-      time: "12:00",
-      speaker: "name of speaker",
-      info: "info about event/speaker",
-    },
-    {
-      key: "4",
-      date: "day 2",
-      time: "13:00",
-      speaker: "name of speaker",
-      info: "info about event/speaker",
-    },
-  ];
   return (
     <View>
       <Header />
@@ -41,11 +12,12 @@ const Schedule = ({ schedule, passCloseSchedule }) => {
       <FlatList
         data={schedule}
         renderItem={({ item }) => (
-          <View>
-            <Text>{item.title}</Text>
-            <Text>Day: {item.day}</Text>
-            <Text>Time: {item.time}</Text>
-            <Text>Info: {item.info}</Text>
+          <View style={styles.viewDiv}>
+            <Text style={styles.title}>{item.title}</Text>
+            <Text style={styles.dayTime}>
+              {item.day} | {item.time}
+            </Text>
+            <Text style={styles.info}>{item.info}</Text>
           </View>
         )}
       />
@@ -53,7 +25,26 @@ const Schedule = ({ schedule, passCloseSchedule }) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  viewDiv: {
+    backgroundColor: colors.liColor,
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 8,
+  },
+  title: {
+    textAlign: "center",
+    fontSize: 18,
+  },
+  dayTime: {
+    textAlign: "center",
+    fontSize: 18,
+  },
+  info: {
+    textAlign: "center",
+  },
+});
 
 const mapStateToProps = (state) => {
   const { schedule } = state;

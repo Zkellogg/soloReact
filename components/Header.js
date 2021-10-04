@@ -18,6 +18,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#95C04C",
     alignItems: "center",
     justifyContent: "center",
+    borderBottomWidth: 2,
+    borderBottomColor: "black",
   },
   headerTitle: {
     color: "black",
